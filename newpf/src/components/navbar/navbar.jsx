@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +10,7 @@ function NavBar() {
 
   useEffect(() => {
     const checkScreenWidth = () => {
-      setIsMobile(window.innerWidth <= 768); // Changer cette valeur en fonction de la largeur considérée comme mobile
+      setIsMobile(window.innerWidth <= 768);
     };
 
     checkScreenWidth();
@@ -37,6 +36,7 @@ function NavBar() {
           <a href="#a-propos">À propos</a>
           <a href="#projets">Projets</a>
           <a href="#competences">Compétences</a>
+          <a href="#contact">Contact</a>
         </div>
       )}
       {isOpen && (
@@ -44,6 +44,7 @@ function NavBar() {
           <a href="#a-propos">À propos</a>
           <a href="#projets">Projets</a>
           <a href="#competences">Compétences</a>
+          <a href="#contact">Contact</a>
         </div>
       )}
     </div>
