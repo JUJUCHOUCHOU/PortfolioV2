@@ -114,25 +114,28 @@ body {
   height: 100%;
   object-fit: cover; 
   z-index: -1; 
+  opacity: 82%;
 }
 
 .headerContainer-textContainer {
   position: relative; 
   padding-left: 25%;
-  padding-top: 5%;
+  padding-top: 10%;
   text-align: end;
-  color: var(--lightGrey-);
+  color: var(--green-);
   padding-right: 5%;
 }
 
 .headerContainer-textContainer p {
-  font-size: 24px;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .headerContainer-textContainer h1 {
   font-size: 80px;
-  color: var(--green-);
+  color: var(---);
   animation: slideIn 3s ease forwards;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes slideIn {
@@ -425,11 +428,11 @@ body {
   }
 
   .headerContainer-textContainer p {
-    font-size: 16px; /* Ajustement pour les très petits écrans */
+    font-size: 16px; 
   }
 
   .headerContainer-textContainer h1 {
-    font-size: 30px; /* Ajustement pour les très petits écrans */
+    font-size: 30px; 
   }
 
   .aboutContainer {
