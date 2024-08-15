@@ -4,7 +4,6 @@ import About from "../components/about/about.jsx"
 import Projects from "../components/projects/projects.jsx"
 import Skills from "../components/skills/skills.jsx"
 import Contact from "../components/contact/contact.jsx"
-import Footer from "../components/footer/footer.jsx"
 
 function Page(){
     return(
@@ -15,7 +14,6 @@ function Page(){
             <Projects />
             <Skills />
             <Contact/>
-            <Footer />
         </div>
     )
 }

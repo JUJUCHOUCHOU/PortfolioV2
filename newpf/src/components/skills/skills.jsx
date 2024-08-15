@@ -2,6 +2,7 @@ function Skills() {
     return (
         <div id="competences">
             <h2>Compétences</h2>
+            <div className="skillsContainer">
             <div className="competence">
                 <h3>Conception Responsive</h3>
                 <i class="fa-solid fa-mobile-screen"></i>
@@ -22,6 +23,7 @@ function Skills() {
                 <p>
                 L'optimisation des performances est essentielle pour des sites web rapides et fluides. J'utilise la minification des fichiers, le redimensionnement et l'optimisation des images en formats modernes comme WebP, ainsi que des outils comme Lighthouse pour analyser et améliorer continuellement les performances, assurant ainsi une expérience utilisateur optimale.
                 </p>
+            </div>
             </div>
         </div>
     );

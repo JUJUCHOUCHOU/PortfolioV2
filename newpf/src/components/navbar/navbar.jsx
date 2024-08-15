@@ -8,6 +8,10 @@ function NavBar() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     const checkScreenWidth = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -41,10 +45,10 @@ function NavBar() {
       )}
       {isOpen && (
         <div className="menu">
-          <a href="#a-propos">À propos</a>
-          <a href="#projets">Projets</a>
-          <a href="#competences">Compétences</a>
-          <a href="#contact">Contact</a>
+          <a href="#a-propos" onClick={closeMenu}>À propos</a>
+          <a href="#projets" onClick={closeMenu}>Projets</a>
+          <a href="#competences" onClick={closeMenu}>Compétences</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
         </div>
       )}
     </div>
@@ -52,3 +56,4 @@ function NavBar() {
 }
 
 export default NavBar;
+
